@@ -1,0 +1,141 @@
+Matrix,Evidence_or_function,Criterion,Code,Interpretation
+Operational requirements,Fixed monitoring networks,Low latency,D,Direct/demonstrated
+Operational requirements,Fixed monitoring networks,Spatial/vertical coverage,P,Partial/indirect
+Operational requirements,Fixed monitoring networks,Source/pollutant specificity,P,Partial/indirect
+Operational requirements,Fixed monitoring networks,Extreme-event robustness,P,Partial/indirect
+Operational requirements,Fixed monitoring networks,Uncertainty reported,P,Partial/indirect
+Operational requirements,Satellite and remote sensing,Low latency,P,Partial/indirect
+Operational requirements,Satellite and remote sensing,Spatial/vertical coverage,D,Direct/demonstrated
+Operational requirements,Satellite and remote sensing,Source/pollutant specificity,P,Partial/indirect
+Operational requirements,Satellite and remote sensing,Extreme-event robustness,P,Partial/indirect
+Operational requirements,Satellite and remote sensing,Uncertainty reported,P,Partial/indirect
+Operational requirements,Crewed mobile and community sensing,Low latency,P,Partial/indirect
+Operational requirements,Crewed mobile and community sensing,Spatial/vertical coverage,D,Direct/demonstrated
+Operational requirements,Crewed mobile and community sensing,Source/pollutant specificity,P,Partial/indirect
+Operational requirements,Crewed mobile and community sensing,Extreme-event robustness,P,Partial/indirect
+Operational requirements,Crewed mobile and community sensing,Uncertainty reported,P,Partial/indirect
+Operational requirements,Incident mobile or UAV sensing,Low latency,P,Partial/indirect
+Operational requirements,Incident mobile or UAV sensing,Spatial/vertical coverage,P,Partial/indirect
+Operational requirements,Incident mobile or UAV sensing,Source/pollutant specificity,P,Partial/indirect
+Operational requirements,Incident mobile or UAV sensing,Extreme-event robustness,P,Partial/indirect
+Operational requirements,Incident mobile or UAV sensing,Uncertainty reported,P,Partial/indirect
+Operational requirements,Operational smoke and dispersion models,Low latency,P,Partial/indirect
+Operational requirements,Operational smoke and dispersion models,Spatial/vertical coverage,D,Direct/demonstrated
+Operational requirements,Operational smoke and dispersion models,Source/pollutant specificity,P,Partial/indirect
+Operational requirements,Operational smoke and dispersion models,Extreme-event robustness,P,Partial/indirect
+Operational requirements,Operational smoke and dispersion models,Uncertainty reported,P,Partial/indirect
+Technical evidence,Fault-tolerant UAV monitoring,Decision relevance,D,Direct/demonstrated
+Technical evidence,Fault-tolerant UAV monitoring,Operational realism,D,Direct/demonstrated
+Technical evidence,Fault-tolerant UAV monitoring,Uncertainty propagation,N,Not assessed/materially untested
+Technical evidence,Fault-tolerant UAV monitoring,Incident-relevant validation,P,Partial/indirect
+Technical evidence,Fault-tolerant UAV monitoring,Downstream value,N,Not assessed/materially untested
+Technical evidence,PyroTrack belief-state planning,Decision relevance,D,Direct/demonstrated
+Technical evidence,PyroTrack belief-state planning,Operational realism,P,Partial/indirect
+Technical evidence,PyroTrack belief-state planning,Uncertainty propagation,P,Partial/indirect
+Technical evidence,PyroTrack belief-state planning,Incident-relevant validation,N,Not assessed/materially untested
+Technical evidence,PyroTrack belief-state planning,Downstream value,N,Not assessed/materially untested
+Technical evidence,FIRE-VLM fire tracking,Decision relevance,D,Direct/demonstrated
+Technical evidence,FIRE-VLM fire tracking,Operational realism,P,Partial/indirect
+Technical evidence,FIRE-VLM fire tracking,Uncertainty propagation,N,Not assessed/materially untested
+Technical evidence,FIRE-VLM fire tracking,Incident-relevant validation,N,Not assessed/materially untested
+Technical evidence,FIRE-VLM fire tracking,Downstream value,N,Not assessed/materially untested
+Technical evidence,Observation-coupled smoke forecasting,Decision relevance,D,Direct/demonstrated
+Technical evidence,Observation-coupled smoke forecasting,Operational realism,D,Direct/demonstrated
+Technical evidence,Observation-coupled smoke forecasting,Uncertainty propagation,P,Partial/indirect
+Technical evidence,Observation-coupled smoke forecasting,Incident-relevant validation,D,Direct/demonstrated
+Technical evidence,Observation-coupled smoke forecasting,Downstream value,D,Direct/demonstrated
+Technical evidence,Wildfire PM mapping and forecasting,Decision relevance,D,Direct/demonstrated
+Technical evidence,Wildfire PM mapping and forecasting,Operational realism,P,Partial/indirect
+Technical evidence,Wildfire PM mapping and forecasting,Uncertainty propagation,P,Partial/indirect
+Technical evidence,Wildfire PM mapping and forecasting,Incident-relevant validation,D,Direct/demonstrated
+Technical evidence,Wildfire PM mapping and forecasting,Downstream value,P,Partial/indirect
+Health evidence,Canadian-smoke exposure and equity mapping,Timely delivery,N,Not assessed/materially untested
+Health evidence,Canadian-smoke exposure and equity mapping,Population targeting,D,Direct/demonstrated
+Health evidence,Canadian-smoke exposure and equity mapping,Vulnerability and response capacity,P,Partial/indirect
+Health evidence,Canadian-smoke exposure and equity mapping,Communicated uncertainty,P,Partial/indirect
+Health evidence,Canadian-smoke exposure and equity mapping,Actionability,P,Partial/indirect
+Health evidence,Canadian-smoke exposure and equity mapping,Outcome evaluation,N,Not assessed/materially untested
+Health evidence,Community wildfire-smoke risk communication,Timely delivery,P,Partial/indirect
+Health evidence,Community wildfire-smoke risk communication,Population targeting,D,Direct/demonstrated
+Health evidence,Community wildfire-smoke risk communication,Vulnerability and response capacity,D,Direct/demonstrated
+Health evidence,Community wildfire-smoke risk communication,Communicated uncertainty,N,Not assessed/materially untested
+Health evidence,Community wildfire-smoke risk communication,Actionability,D,Direct/demonstrated
+Health evidence,Community wildfire-smoke risk communication,Outcome evaluation,P,Partial/indirect
+Health evidence,Rural Alaska community sensing,Timely delivery,P,Partial/indirect
+Health evidence,Rural Alaska community sensing,Population targeting,P,Partial/indirect
+Health evidence,Rural Alaska community sensing,Vulnerability and response capacity,D,Direct/demonstrated
+Health evidence,Rural Alaska community sensing,Communicated uncertainty,P,Partial/indirect
+Health evidence,Rural Alaska community sensing,Actionability,P,Partial/indirect
+Health evidence,Rural Alaska community sensing,Outcome evaluation,N,Not assessed/materially untested
+Health evidence,Controlled DIY air-cleaner evaluation,Timely delivery,N,Not assessed/materially untested
+Health evidence,Controlled DIY air-cleaner evaluation,Population targeting,N,Not assessed/materially untested
+Health evidence,Controlled DIY air-cleaner evaluation,Vulnerability and response capacity,N,Not assessed/materially untested
+Health evidence,Controlled DIY air-cleaner evaluation,Communicated uncertainty,P,Partial/indirect
+Health evidence,Controlled DIY air-cleaner evaluation,Actionability,D,Direct/demonstrated
+Health evidence,Controlled DIY air-cleaner evaluation,Outcome evaluation,D,Direct/demonstrated
+Governance evidence,General AI and health governance,Named responsibility,P,Partial/indirect
+Governance evidence,General AI and health governance,Override and fallback,P,Partial/indirect
+Governance evidence,General AI and health governance,Operational authority,P,Partial/indirect
+Governance evidence,General AI and health governance,Privacy and data protection,D,Direct/demonstrated
+Governance evidence,General AI and health governance,Equity and access,P,Partial/indirect
+Governance evidence,General AI and health governance,Audit and redress,P,Partial/indirect
+Governance evidence,Operational fire-UAS evidence,Named responsibility,P,Partial/indirect
+Governance evidence,Operational fire-UAS evidence,Override and fallback,P,Partial/indirect
+Governance evidence,Operational fire-UAS evidence,Operational authority,D,Direct/demonstrated
+Governance evidence,Operational fire-UAS evidence,Privacy and data protection,N,Not assessed/materially untested
+Governance evidence,Operational fire-UAS evidence,Equity and access,N,Not assessed/materially untested
+Governance evidence,Operational fire-UAS evidence,Audit and redress,P,Partial/indirect
+Governance evidence,Community smoke monitoring and communication,Named responsibility,D,Direct/demonstrated
+Governance evidence,Community smoke monitoring and communication,Override and fallback,P,Partial/indirect
+Governance evidence,Community smoke monitoring and communication,Operational authority,P,Partial/indirect
+Governance evidence,Community smoke monitoring and communication,Privacy and data protection,N,Not assessed/materially untested
+Governance evidence,Community smoke monitoring and communication,Equity and access,D,Direct/demonstrated
+Governance evidence,Community smoke monitoring and communication,Audit and redress,P,Partial/indirect
+Governance evidence,Operational fire and smoke model evaluation,Named responsibility,N,Not assessed/materially untested
+Governance evidence,Operational fire and smoke model evaluation,Override and fallback,N,Not assessed/materially untested
+Governance evidence,Operational fire and smoke model evaluation,Operational authority,N,Not assessed/materially untested
+Governance evidence,Operational fire and smoke model evaluation,Privacy and data protection,N,Not assessed/materially untested
+Governance evidence,Operational fire and smoke model evaluation,Equity and access,N,Not assessed/materially untested
+Governance evidence,Operational fire and smoke model evaluation,Audit and redress,P,Partial/indirect
+Cross-pipeline gaps,Observation and sensing,Within-stage evidence,D,Direct/demonstrated
+Cross-pipeline gaps,Observation and sensing,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Observation and sensing,Next-interface validation,P,Partial/indirect
+Cross-pipeline gaps,Observation and sensing,Prospective or operational use,D,Direct/demonstrated
+Cross-pipeline gaps,Observation and sensing,Downstream outcomes,N,Not assessed/materially untested
+Cross-pipeline gaps,Observation and sensing,Equity and access,P,Partial/indirect
+Cross-pipeline gaps,Source-state estimation,Within-stage evidence,D,Direct/demonstrated
+Cross-pipeline gaps,Source-state estimation,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Source-state estimation,Next-interface validation,P,Partial/indirect
+Cross-pipeline gaps,Source-state estimation,Prospective or operational use,P,Partial/indirect
+Cross-pipeline gaps,Source-state estimation,Downstream outcomes,N,Not assessed/materially untested
+Cross-pipeline gaps,Source-state estimation,Equity and access,N,Not assessed/materially untested
+Cross-pipeline gaps,Smoke-concentration forecasting,Within-stage evidence,D,Direct/demonstrated
+Cross-pipeline gaps,Smoke-concentration forecasting,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Smoke-concentration forecasting,Next-interface validation,P,Partial/indirect
+Cross-pipeline gaps,Smoke-concentration forecasting,Prospective or operational use,P,Partial/indirect
+Cross-pipeline gaps,Smoke-concentration forecasting,Downstream outcomes,N,Not assessed/materially untested
+Cross-pipeline gaps,Smoke-concentration forecasting,Equity and access,N,Not assessed/materially untested
+Cross-pipeline gaps,Exposure and health interpretation,Within-stage evidence,D,Direct/demonstrated
+Cross-pipeline gaps,Exposure and health interpretation,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Exposure and health interpretation,Next-interface validation,P,Partial/indirect
+Cross-pipeline gaps,Exposure and health interpretation,Prospective or operational use,P,Partial/indirect
+Cross-pipeline gaps,Exposure and health interpretation,Downstream outcomes,P,Partial/indirect
+Cross-pipeline gaps,Exposure and health interpretation,Equity and access,D,Direct/demonstrated
+Cross-pipeline gaps,Human decision and communication,Within-stage evidence,D,Direct/demonstrated
+Cross-pipeline gaps,Human decision and communication,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Human decision and communication,Next-interface validation,P,Partial/indirect
+Cross-pipeline gaps,Human decision and communication,Prospective or operational use,D,Direct/demonstrated
+Cross-pipeline gaps,Human decision and communication,Downstream outcomes,P,Partial/indirect
+Cross-pipeline gaps,Human decision and communication,Equity and access,D,Direct/demonstrated
+Cross-pipeline gaps,Protective intervention,Within-stage evidence,P,Partial/indirect
+Cross-pipeline gaps,Protective intervention,Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Protective intervention,Next-interface validation,NA,Not applicable
+Cross-pipeline gaps,Protective intervention,Prospective or operational use,P,Partial/indirect
+Cross-pipeline gaps,Protective intervention,Downstream outcomes,D,Direct/demonstrated
+Cross-pipeline gaps,Protective intervention,Equity and access,P,Partial/indirect
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Within-stage evidence,P,Partial/indirect
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Uncertainty treatment,P,Partial/indirect
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Next-interface validation,NA,Not applicable
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Prospective or operational use,P,Partial/indirect
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Downstream outcomes,N,Not assessed/materially untested
+Cross-pipeline gaps,Governance and assurance (cross-cutting),Equity and access,P,Partial/indirect

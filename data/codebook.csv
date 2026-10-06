@@ -1,0 +1,27 @@
+﻿Field,Definition,Allowed values or missing rule
+Record_ID,Stable record identifier used across repository files,Required and unique
+Title,Report title,Text; blank only when unavailable in the source record
+Authors,Report authors,Text; semicolon-separated where normalised
+Year,Publication year,Integer year or blank when unavailable
+Venue,Journal conference repository or other publication venue,Text or blank when unavailable
+DOI,Digital object identifier,Normalised DOI without URL prefix or blank
+Fire_Type,Fire context addressed by the report,Controlled descriptive text; not fully coded/not reported when unsupported
+Fire_Specificity,Relationship of the evidence to the fire-plume review scope,Direct fire-specific evidence; fire-specific interface/source-state evidence; fire-specific evidence synthesis; or another explicitly bounded category
+Task_Taxonomy,One or more observation-to-action tasks addressed by the report,Semicolon-separated controlled task labels; missing detail remains explicit
+Platform,Physical or computational platform considered,Text; not fully coded/not reported when unsupported
+Sensor_or_Data,Sensor modality observational source dataset or input data,Text; not fully coded/not reported when unsupported
+Method_or_Model,Primary method model or analytical approach,Text; not fully coded/not reported when unsupported
+Evidence_Setting,Normalised setting in which evidence was produced,Simulation; retrospective; controlled experiment; field observational; pilot/workflow; operational; review/synthesis; or explicitly reported equivalent
+Field_vs_Simulation,High-level distinction between field empirical simulation and synthesis evidence,Text using the report-supported category
+Evaluation_Design,Design used to evaluate or substantiate the contribution,Text; not fully coded/not reported when unsupported
+Metrics,Reported evaluation outcomes or metrics,Text; no metric inferred when absent
+Uncertainty_Treatment,How uncertainty variability or sensitivity was handled,Text; not reported when absent
+Deployment_Maturity_Register_Value,Descriptive maturity of the reported evidence,0; 1; 2; 3; 4; N/A for evidence syntheses/guidance; or Not fully coded / not reported when a maturity value cannot be supported from the available charting basis
+Claim_Boundary,Maximum inference permitted from the report in this review,Required bounded text for substantive use
+Evidence_Role_Parent,Controlled top-level evidence role used for aggregation,Direct fire-specific evidence; Fire-specific interface or background evidence; Evidence synthesis or guidance; Transferred adjacent-domain evidence
+Evidence_Role_Register,Role assigned to the evidence in the synthesis; descriptive subtypes may refine a parent family without creating a new top-level class,Parent families: direct fire-specific evidence; conditional interface/source-state evidence; evidence synthesis/guidance; transferred adjacent-domain evidence. Descriptive subtypes are allowed when their parent family remains clear.
+Charting_Basis,Basis on which the minimum coding was prepared,Report text or documented record-level basis
+Eligibility_Author_Verification,Status of author verification for eligibility,Author-approved eligibility statement or explicit pending status
+AI_Minimum_Coding_Confidence,Minimum confidence assigned to AI-assisted coding,High; Medium; Low; or explicit not assessed
+Detailed_Coding_Status,Completeness and verification status of fine-grained coding,Explicit text; missing detail is never silently inferred
+DOI_URL,Resolvable DOI link derived from DOI when present,https://doi.org/ DOI URL or blank

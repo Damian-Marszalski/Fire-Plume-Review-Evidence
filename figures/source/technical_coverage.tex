@@ -1,0 +1,23 @@
+\centering
+\fontsize{7.0}{7.8}\selectfont
+\setlength{\tabcolsep}{1.2pt}
+\setlength{\extrarowheight}{0pt}
+\renewcommand{\arraystretch}{1.12}
+\rowcolors{2}{black!2}{white}
+\newcommand{\fambox}[1]{\parbox[c][13.5mm][c]{3.90cm}{\centering\setlength{\baselineskip}{7.3pt}#1}}
+\newcommand{\hdrbox}[1]{\parbox[c][9.5mm][c]{\linewidth}{\centering\bfseries\setlength{\baselineskip}{7.2pt}#1}}
+\makebox[\linewidth][c]{%
+\begin{tabular}{>{\centering\arraybackslash}m{4.20cm} >{\centering\arraybackslash}m{1.85cm} >{\centering\arraybackslash}m{2.35cm} >{\centering\arraybackslash}m{2.35cm} >{\centering\arraybackslash}m{2.15cm} >{\centering\arraybackslash}m{2.15cm}}
+\toprule
+\rowcolor{black!7}
+\hdrbox{Representative technical\\evidence} & \hdrbox{Decision\\relevance} & \hdrbox{Operational\\realism} & \hdrbox{Uncertainty\\propagation} & \hdrbox{Incident-relevant\\validation} & \hdrbox{Downstream\\value}\\
+\midrule
+\fambox{Fault-tolerant UAV\\monitoring} & \covD & \covD & \covN & \covP & \covN\\
+\fambox{Belief-state\\planning\\(PyroTrack)} & \covD & \covP & \covP & \covN & \covN\\
+\fambox{VLM-shaped\\fire tracking\\(FIRE-VLM)} & \covD & \covP & \covN & \covN & \covN\\
+\fambox{Observation-coupled\\smoke\\forecasting} & \covD & \covD & \covP & \covD & \covD\\
+\fambox{Wildfire PM\\mapping and\\forecasting} & \covD & \covP & \covP & \covD & \covP\\
+\bottomrule
+\end{tabular}%
+}
+\par\vspace{2.8mm}\noindent\makebox[\linewidth][c]{\fontsize{7.0}{7.8}\selectfont \colorbox{green!28}{\strut\textbf{D}} directly addressed \quad \colorbox{yellow!38}{\strut\textbf{P}} partially addressed \quad \colorbox{black!10}{\strut\textbf{N}} not materially assessed.}

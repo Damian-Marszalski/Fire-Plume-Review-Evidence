@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+  stage/.style={draw=black!45,rounded corners=2pt,text width=0.165\linewidth,minimum height=11mm,align=center,inner sep=3pt,font=\bfseries\footnotesize,text=black},
+  q/.style={font=\scriptsize,align=center,text width=0.165\linewidth,text=black},
+  arr/.style={-{Latex[length=2mm]},thick,draw=black!60},
+  gov/.style={draw=purple!65!black,fill=purple!6,rounded corners=2pt,align=center,text width=0.94\linewidth,inner sep=5pt,font=\footnotesize,text=black},
+  govnote/.style={font=\scriptsize,align=center,text width=0.90\linewidth,text=black}
+]
+\node[stage,fill=red!9,draw=red!65!black] (s1) at (0,0) {Risks and impacts};
+\node[stage,fill=blue!9,draw=blue!65!black] (s2) at (3.65,0) {Sensing and tracking};
+\node[stage,fill=orange!10,draw=orange!70!black] (s3) at (7.3,0) {Forecasting};
+\node[stage,fill=green!9,draw=green!55!black] (s4) at (10.95,0) {Health-risk assessment};
+\node[stage,fill=purple!9,draw=purple!65!black] (s5) at (14.6,0) {Communication and action};
+\foreach \a/\b in {s1/s2,s2/s3,s3/s4,s4/s5}{\draw[arr] (\a)--(\b);} 
+
+\node[q,below=3.5mm of s1] {Why does fire-plume pollution matter?\\\textit{Section 3}};
+\node[q,below=3.5mm of s2] {Where are the fire and plume now?\\\textit{Section 4}};
+\node[q,below=3.5mm of s3] {Where will the smoke travel, and at what concentrations?\\\textit{Section 4.3}};
+\node[q,below=3.5mm of s4] {Who is exposed, who is vulnerable, and how serious is the risk?\\\textit{Section 5}};
+\node[q,below=3.5mm of s5] {How should risk be communicated, and what action should follow?\\\textit{Sections 5--6}};
+
+\node[gov] (g) at (7.3,-2.82) {\textbf{Governance and operational assurance}};
+\node[govnote,below=1.5mm of g] {Across the full pathway: who has responsibility and authority, who can stop or override a system, how are sensitive data protected, who can receive and feasibly act on advice, and how can decisions be audited or challenged?};
+\end{tikzpicture}

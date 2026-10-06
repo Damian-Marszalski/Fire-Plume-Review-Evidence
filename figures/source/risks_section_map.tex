@@ -1,0 +1,17 @@
+\begin{tikzpicture}[
+ node distance=2.7mm,
+ mini/.style={draw=black!35,fill=black!3,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ current/.style={draw=red!70!black,fill=red!12,very thick,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ arr/.style={-{Latex[length=1.6mm]},draw=black!55},
+ panel/.style={draw=red!65!black,fill=red!4,rounded corners=2pt,align=left,text width=0.91\linewidth,inner sep=5pt,text=black}
+]
+\node[current] (a) {\textbf{Risks \& impacts}};
+\node[mini,right=of a] (b) {Sensing\\and tracking};
+\node[mini,right=of b] (c) {Forecasting};
+\node[mini,right=of c] (d) {Health-risk\\assessment};
+\node[mini,right=of d] (e) {Communication\\and action};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[panel,below=6mm of c] (p) {\textbf{Question answered by this section:} Why is fire-induced air pollution difficult and consequential to manage, and what properties must later sensing, forecasting, health-risk and response stages account for?\\[1mm]
+\textbf{Included here:} fire types and drivers; plume composition and transport; toxicological and health consequences; population vulnerability and socioeconomic impacts; operational constraints exposed by current monitoring and response.\\[1mm]
+\textbf{Output to later sections:} hazard-derived operational requirements.};
+\end{tikzpicture}

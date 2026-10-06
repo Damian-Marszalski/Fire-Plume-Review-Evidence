@@ -1,0 +1,33 @@
+\begin{tikzpicture}[
+  node distance=3.8mm,
+  box/.style={draw=revisionblue!75!black, fill=blue!6, rounded corners=1.6pt,
+    align=center, text width=0.78\linewidth, minimum height=8.8mm, inner sep=3.6pt, text=black},
+  assess/.style={draw=revisionblue!75!black, fill=blue!6, rounded corners=1.6pt,
+    align=center, text width=0.52\linewidth, minimum height=9.5mm, inner sep=3.6pt, text=black},
+  notret/.style={draw=orange!75!black, fill=orange!8, rounded corners=1.6pt,
+    align=center, text width=0.25\linewidth, minimum height=9.5mm, inner sep=3.6pt, text=black},
+  inc/.style={draw=green!55!black, fill=green!8, rounded corners=1.6pt,
+    align=center, text width=0.52\linewidth, minimum height=8.8mm, inner sep=3.6pt, text=black},
+  arr/.style={-{Latex[length=2mm]}, thick, draw=revisionblue!75!black}
+]
+\node[box] (id) {Formal source linkages before cross-source deduplication: \textbf{64,922}\\[-0.2mm]
+\scriptsize Semantic Scholar 11,149; PubMed 2,508; Scopus 19,763; IEEE Xplore 2,594; ACM DL 28,728; exploratory registry 180};
+\node[box, below=of id] (dedup) {Duplicates and source-overlap linkages removed: \textbf{37,683}};
+\node[box, below=of dedup] (screen) {Unique records screened by title and abstract: \textbf{27,239}\\[-0.2mm]
+\scriptsize 26,129 title/abstract exclusions; 397 contextual records outside the primary corpus};
+\node[box, below=of screen] (sought) {Reports sought for retrieval: \textbf{713}};
+
+\node[assess, below left=5.2mm and -9mm of sought.south] (assessed) {Retrieved reports assessed for eligibility: \textbf{622}\\[-0.2mm]
+\scriptsize Final full-text exclusions after author review: 60};
+\node[notret, right=5mm of assessed] (nr) {Reports not retrieved: \textbf{91}\\[-0.2mm]
+\scriptsize Eligibility unknown; not exclusions; no findings inferred};
+\node[inc, below=of assessed] (inc) {Final included reports in the primary corpus: \textbf{562}\\[-0.2mm]
+\scriptsize Minimum corpus-level coding normalised for synthesis};
+
+\draw[arr] (id)--(dedup);
+\draw[arr] (dedup)--(screen);
+\draw[arr] (screen)--(sought);
+\draw[arr] (sought.south) -- ++(0,-2mm) -| (assessed.north);
+\draw[arr] (sought.south) -- ++(0,-2mm) -| (nr.north);
+\draw[arr] (assessed)--(inc);
+\end{tikzpicture}

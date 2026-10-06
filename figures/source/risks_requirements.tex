@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+row/.style={draw=black!35,rounded corners=2pt,minimum height=9mm,inner sep=3pt,font=\footnotesize,text=black},
+hazard/.style={row,fill=red!7,align=left,text width=0.39\linewidth},
+req/.style={row,fill=blue!7,align=left,text width=0.39\linewidth},
+head/.style={font=\bfseries\footnotesize,text=black},
+arr/.style={-{Latex[length=1.8mm]},draw=black!55}
+]
+\node[head] at (2.4,0.45) {Hazard characteristic};
+\node[head] at (9.9,0.45) {Operational requirement};
+\node[hazard] (h1) at (2.4,-0.5) {Rapid plume change and short-lived peaks};
+\node[req]    (r1) at (9.9,-0.5) {\textbf{Low latency:} observe, update and communicate before the useful action window closes};
+\node[hazard] (h2) at (2.4,-1.8) {Large spatial and vertical variability};
+\node[req]    (r2) at (9.9,-1.8) {\textbf{Coverage:} capture local, downwind and vertical variation at decision-relevant resolution};
+\node[hazard] (h3) at (2.4,-3.1) {Fuel- and source-dependent pollutant mixtures};
+\node[req]    (r3) at (9.9,-3.1) {\textbf{Specificity:} distinguish decision-relevant pollutants and mixtures rather than treating all smoke as equivalent};
+\node[hazard] (h4) at (2.4,-4.4) {Extreme incident conditions, terrain and meteorology};
+\node[req]    (r4) at (9.9,-4.4) {\textbf{Robustness:} remain useful under smoke, wind, heat, difficult terrain and access constraints};
+\node[hazard] (h5) at (2.4,-5.7) {Incomplete observations and model error};
+\node[req]    (r5) at (9.9,-5.7) {\textbf{Uncertainty:} quantify and propagate uncertainty into later stages};
+\foreach \i in {1,2,3,4,5}{\draw[arr] (h\i.east) -- (r\i.west);} 
+\node[draw=green!50!black,fill=green!5,rounded corners=2pt,align=center,text width=0.86\linewidth,inner sep=4pt,font=\scriptsize,text=black] (note) at (6.15,-7.25)
+{These requirements are inherited by later technical stages. Health-risk, actionability and governance requirements are added as the pathway approaches consequential decisions.};
+\end{tikzpicture}

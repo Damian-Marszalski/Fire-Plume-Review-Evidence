@@ -1,0 +1,60 @@
+\begin{table}[H]
+\color{revisionblue}
+\centering
+\caption{Compact comparison of representative monitoring platforms and sensing modalities used in the reviewed evidence. Characteristics are reported only for the evaluated settings and are not a cross-study performance ranking. Adjacent-domain examples illustrate transferable measurement or deployment constraints rather than wildfire-response validation.}
+\label{tab:platform_sensor_matrix}
+\footnotesize
+\rowcolors{2}{black!2}{white}
+\renewcommand{\arraystretch}{1.55}
+\setlength{\extrarowheight}{2pt}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.6cm}
+                >{\raggedright\arraybackslash}p{3.05cm}
+                >{\raggedright\arraybackslash}p{3.25cm}
+                >{\raggedright\arraybackslash}p{3.55cm}
+                X}
+\toprule
+\rowcolor{black!7}
+\textbf{Monitoring approach} &
+\textbf{Representative sensing or data} &
+\textbf{Resolution and latency} &
+\textbf{Main deployment constraint} &
+\textbf{Evidence role here}\\
+\midrule
+Fixed and community ground monitoring &
+PM$_{2.5}$ and particulate monitors with local meteorology &
+Continuous or high-frequency point measurements; strong local temporal continuity but spatial coverage depends on network density &
+Calibration, maintenance, power and connectivity, siting, and sparse spatial and vertical coverage &
+Direct fire-smoke evidence where evaluated; community implementation evidence \\
+
+Satellite and airborne remote sensing &
+Optical and thermal imagery, aerosol products and plume products &
+Broad-area spatial coverage; timing and usable vertical information depend on the product and overpass &
+Cloud and smoke obscuration, revisit delay, retrieval assumptions, and limited near-surface or vertical information &
+Fire-specific observation evidence and enabling source-state input \\
+
+Crewed and community mobile sensing &
+Instrumented service and mapping vehicles, bicycles, and citizen low-cost sensors~\citep{degroot2025snuffelfiets} &
+Repeated street- or route-scale transects can resolve local gradients not represented by sparse fixed sites &
+Route bias, calibration, maintenance, operator dependence, and uneven geographic coverage &
+Primarily adjacent-domain transfer evidence \\
+
+UAV particle and gas sampling &
+Airborne particle sampling and gas measurements; representative systems reviewed by \citet{jonca2022drone} &
+Adaptive local and vertical sampling close to a plume; measurement rate depends on payload and sensor &
+Endurance, payload, weather, positioning, calibration, communication, and incident airspace &
+Mixed fire-specific sampling and adjacent-domain transfer evidence \\
+
+Structured industrial-plume UAV sensing &
+High-frequency airborne gas measurement and localisation in evaluated industrial and controlled plumes~\citep{chen2023using,soskind2023stationary} &
+Examples include 1~Hz gas measurements and configuration-specific localisation performance &
+Transferability to wildfire chemistry, turbulence, safety, and incident operations is unvalidated &
+Transferred methodological evidence \\
+
+Reconfigurable UAV platform &
+LiDAR and 640$\times$512 thermal imaging in the evaluated PULSAR configuration~\citep{perikleous2024novel} &
+Reported configurations illustrate a payload--endurance trade-off, with approximately 24--28~min flight time &
+Payload-endurance trade-off, weather, BVLOS and airspace, and task-specific sensor suitability &
+Platform-capability evidence; not end-to-end fire-response validation \\
+\bottomrule
+\end{tabularx}
+\end{table}

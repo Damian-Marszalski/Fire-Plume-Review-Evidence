@@ -1,0 +1,33 @@
+\begin{tikzpicture}[
+rowlab/.style={font=\footnotesize\bfseries,align=right,text width=0.14\linewidth,text=black},
+stage/.style={draw=black!40,rounded corners=2pt,align=center,text width=0.145\linewidth,minimum height=12mm,font=\footnotesize,text=black},
+handoff/.style={draw=orange!75!black,fill=orange!8,rounded corners=2pt,align=left,text width=0.18\linewidth,minimum height=18mm,font=\scriptsize,text=black},
+cond/.style={draw=purple!65!black,fill=purple!5,rounded corners=2pt,align=center,text width=0.18\linewidth,minimum height=15mm,font=\scriptsize,text=black},
+arr/.style={-{Latex[length=1.8mm]},thick,draw=black!60},
+handarr/.style={draw=orange!75!black,thick},
+dot/.style={circle,fill=orange!75!black,inner sep=1.2pt}
+]
+\node[rowlab] at (-1.6,0) {Pipeline stages};
+\node[stage,fill=blue!8]   (s1) at (1.15,0) {Fire and plume\\sensing};
+\node[stage,fill=orange!8] (s2) at (4.15,0) {Forecasting};
+\node[stage,fill=green!8]  (s3) at (7.15,0) {Health-risk\\assessment};
+\node[stage,fill=purple!8] (s4) at (10.15,0) {Communication and\\decision};
+\node[stage,fill=red!7]    (s5) at (13.15,0) {Protective\\action};
+\foreach \a/\b in {s1/s2,s2/s3,s3/s4,s4/s5}{\draw[arr] (\a)--(\b);} 
+
+\coordinate (m12) at ($(s1.east)!0.5!(s2.west)+(0,-0.38)$);
+\coordinate (m23) at ($(s2.east)!0.5!(s3.west)+(0,-0.38)$);
+\coordinate (m45) at ($(s4.east)!0.5!(s5.west)+(0,-0.38)$);
+
+\node[rowlab] at (-1.6,-2.45) {Highlighted handoffs};
+\node[handoff] (h1) at (2.25,-2.45) {\textbf{Handoff 1 --- observation to forecasting}\\Measurements and estimated fire state and source characteristics, with relevant uncertainty, must become forecast-ready inputs.};
+\node[handoff] (h2) at (6.35,-2.45) {\textbf{Handoff 2 --- forecast to health interpretation}\\Forecast pollutant concentrations and their uncertainty must be translated into exposure and health-risk evidence.};
+\node[handoff] (h3) at (11.75,-2.45) {\textbf{Handoff 3 --- decision to action}\\A protective decision must become a timely, feasible and accountable action that affected people can actually carry out.};
+\foreach \m/\h in {m12/h1,m23/h2,m45/h3}{\node[dot] at (\m) {}; \draw[handarr] (\m) -- (\h.north);} 
+
+\node[rowlab] at (-1.6,-5.25) {Across the pathway};
+\node[cond] at (2.1,-5.25) {\textbf{Operational}\\timeliness, operational realism and incident-relevant validation};
+\node[cond] at (5.8,-5.25) {\textbf{Information}\\decision-relevant outputs and uncertainty retained across interfaces};
+\node[cond] at (9.5,-5.25) {\textbf{Governance}\\responsibility and authority, fallback, privacy, equity, audit and redress};
+\node[cond] at (13.2,-5.25) {\textbf{Outcomes}\\downstream benefit and intervention effectiveness are evaluated};
+\end{tikzpicture}

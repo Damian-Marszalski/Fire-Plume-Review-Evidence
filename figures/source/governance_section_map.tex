@@ -1,0 +1,17 @@
+\begin{tikzpicture}[
+ node distance=2.7mm,
+ mini/.style={draw=black!35,fill=black!3,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ arr/.style={-{Latex[length=1.6mm]},draw=black!55},
+ panel/.style={draw=purple!65!black,fill=purple!5,rounded corners=2pt,align=left,text width=0.91\linewidth,inner sep=5pt,text=black}
+]
+\node[mini] (a) {Risks and impacts};
+\node[mini,right=of a] (b) {Sensing\\and tracking};
+\node[mini,right=of b] (c) {Forecasting};
+\node[mini,right=of c] (d) {Health-risk\\assessment};
+\node[mini,right=of d] (e) {Communication\\and action};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[draw=purple!70!black,very thick,rounded corners=2pt,fit=(a)(b)(c)(d)(e),inner sep=3pt,label={[text=purple!70!black,font=\bfseries\scriptsize]above:Governance applies across every stage}] {};
+\node[panel,below=8mm of c] (p) {\textbf{Question answered by this section:} When observations, forecasts and health-risk estimates can influence consequential decisions, who is responsible, who can stop or override the system, and what legal, ethical and operational controls are required?\\[1mm]
+\textbf{Included here:} responsibility and authority; override and fallback; privacy and dual-use control; operational legality and safety; transparency and uncertainty communication; equity and access; audit, redress and participation.\\[1mm]
+\textbf{Output to the integrated framework:} controls that make technical capability accountable and operationally legitimate.};
+\end{tikzpicture}

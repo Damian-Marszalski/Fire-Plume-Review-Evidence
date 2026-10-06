@@ -1,0 +1,30 @@
+Figure_ID,Original_file,Decision,Replacement_or_location,Provenance,Rights_status,Scientific_boundary
+F01,conceptual_overview.png,Replaced,figures/source/pipeline_overview.tex,Original editable LaTeX/TikZ vector,Original source,Organising and evaluation framework; not an implemented end-to-end architecture
+F02,firefreq.png,Removed,None,Previously reprinted publisher figure,Removed to avoid rights risk,Hazard trend is supported in prose and is not required as a reused figure
+F03,Forecasting_Taxonomy.png,Replaced,figures/source/forecasting_taxonomy.tex,Original editable LaTeX/TikZ vector,Original source,Forecast targets and metrics are separated without cross-study performance ranking
+F04,Framework.png,Removed,None,Previous author-created raster,Removed,Avoids duplicate or unvalidated AI-centric architecture
+F05,Governance.png,Replaced,figures/source/governance_requirements.tex,Original editable LaTeX/TikZ vector,Original source,Governance requirements are review-derived evaluation criteria rather than validated controls
+F06,Health_risk_pipeline.png,Replaced,figures/source/health_pipeline.tex,Original editable LaTeX/TikZ vector,Original source,Separates concentration exposure susceptibility risk decision and intervention
+F07,markov_diagram.png,Removed,None,Previously adapted from textbook source,Removed,Generic MDP tutorial deleted
+F08,marl_diagram.png,Removed,None,Previously adapted from external source,Removed,Generic MARL tutorial deleted
+F09,urbantypes.png,Removed,None,Previous raster based on an online graph and NFPA data,Removed,Background replaced by requirements-led synthesis
+F10,chemicals.png,Removed,None,Previous reuse from coauthor work with rights unresolved,Removed,Pollutant heterogeneity retained in prose
+F11,,Final Figure 1,figures/source/pipeline_overview.tex,Original editable LaTeX/TikZ vector,Original source,Overall observation-to-action organising framework with cross-cutting governance
+F12,,Final Figure 2,figures/source/prisma_flow.tex,Original editable LaTeX/TikZ vector from frozen counts,Original source,PRISMA flow distinguishes source linkages unique records exclusions and non-retrieval
+F13,,Final Figure 3,figures/source/risks_section_map.tex,Original editable LaTeX/TikZ vector,Original source,Section map only; does not add empirical evidence
+F14,,Final Figure 4,figures/source/risks_requirements.tex,Original editable LaTeX/TikZ vector,Original source,Hazard characteristics are translated into review evaluation requirements
+F15,,Final Figure 5,figures/source/autonomous_section_map.tex,Original editable LaTeX/TikZ vector,Original source,Section map only; sensing and forecasting remain distinct tasks
+F16,,Final Figure 6,figures/source/monitoring_coverage.tex,Original editable LaTeX/table source,Original source,Symbols encode evidence coverage rather than pooled effects
+F17,,Final Figure 7,figures/source/forecasting_section_map.tex,Original editable LaTeX/TikZ vector,Original source,Section map distinguishes fire-state plume-transport and concentration forecasting
+F18,,Final Figure 8,figures/source/forecasting_taxonomy.tex,Original editable LaTeX/TikZ vector,Original source,Forecast target taxonomy with task-appropriate outputs and metrics
+F19,,Final Figure 9,figures/source/technical_requirements.tex,Original editable LaTeX/TikZ vector,Original source,Technical evaluation requirements are review-derived criteria
+F20,,Final Figure 10,figures/source/technical_coverage.tex,Original editable LaTeX/table source,Original source,Representative evidence-family coverage; not a ranking of algorithms
+F21,,Final Figure 11,figures/source/health_section_map.tex,Original editable LaTeX/TikZ vector,Original source,Section map only; links concentration evidence to health interpretation
+F22,,Final Figure 12,figures/source/health_pipeline.tex,Original editable LaTeX/TikZ vector,Original source,Health-to-action pathway separates exposure susceptibility risk decision and intervention
+F23,,Final Figure 13,figures/source/health_requirements.tex,Original editable LaTeX/TikZ vector,Original source,Health-risk requirements are review-derived evaluation criteria
+F24,,Final Figure 14,figures/source/health_coverage.tex,Original editable LaTeX/table source,Original source,Representative health evidence coverage; no pooled effect estimate
+F25,,Final Figure 15,figures/source/governance_section_map.tex,Original editable LaTeX/TikZ vector,Original source,Section map only; governance is cross-cutting
+F26,,Final Figure 16,figures/source/governance_requirements.tex,Original editable LaTeX/TikZ vector,Original source,Responsibility authority fallback privacy equity audit and redress requirements
+F27,,Final Figure 17,figures/source/governance_coverage.tex,Original editable LaTeX/table source,Original source,Representative governance evidence coverage with fire-specific limits
+F28,,Final Figure 18,figures/source/cross_pipeline_synthesis.tex,Original editable LaTeX/TikZ vector,Original source,Highlights three interfaces and cross-cutting conditions; not an implemented system
+F29,,Final Figure 19,figures/source/cross_pipeline_coverage.tex,Original editable LaTeX/table source,Original source,Cross-pipeline evidence coverage and interface gaps; not pooled effectiveness evidence

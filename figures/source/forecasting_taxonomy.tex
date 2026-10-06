@@ -1,0 +1,29 @@
+\begin{tikzpicture}[
+card/.style={draw=black!40,rounded corners=2pt,minimum width=0.30\linewidth,minimum height=43mm,inner sep=4pt,text=black},
+head/.style={draw=black!55,rounded corners=2pt,align=center,text width=0.30\linewidth,minimum height=8mm,inner sep=3pt,font=\bfseries\footnotesize,text=black},
+foot/.style={draw=orange!75!black,fill=orange!6,rounded corners=2pt,align=center,text width=0.95\linewidth,inner sep=4pt,font=\scriptsize,text=black}
+]
+\node[head,fill=blue!9]  (h1) at (0,0) {Fire-state forecast};
+\node[head,fill=green!9] (h2) at (5.3,0) {Plume-transport forecast};
+\node[head,fill=purple!9](h3) at (10.6,0) {Concentration forecast};
+\node[card,below=2mm of h1.south,anchor=north] (c1) {\begin{minipage}[t][37mm][t]{0.272\linewidth}\footnotesize\raggedright
+\textbf{Question:} how will the fire state evolve?\\[0.6mm]
+\textbf{Typical outputs:} perimeter, spread, intensity, and source or emission state where modelled.\\[0.6mm]
+\textbf{Typical metrics:} IoU, F1, area error, spread-rate error.\\[0.6mm]
+\textbf{Used for:} fire-response decisions and for initialising or constraining downstream smoke models.
+\end{minipage}};
+\node[card,below=2mm of h2.south,anchor=north] (c2) {\begin{minipage}[t][37mm][t]{0.272\linewidth}\footnotesize\raggedright
+\textbf{Question:} where and when will the plume move?\\[0.6mm]
+\textbf{Typical outputs:} arrival time, footprint, trajectory, plume height.\\[0.6mm]
+\textbf{Typical metrics:} timing, extent and height error.\\[0.6mm]
+\textbf{Used for:} transport warnings and concentration estimation.
+\end{minipage}};
+\node[card,below=2mm of h3.south,anchor=north] (c3) {\begin{minipage}[t][37mm][t]{0.272\linewidth}\footnotesize\raggedright
+\textbf{Question:} what pollutant concentrations will occur, where and when?\\[0.6mm]
+\textbf{Typical outputs:} PM and gas concentration in space and time.\\[0.6mm]
+\textbf{Typical metrics:} RMSE, bias, $R^2$, exceedance skill.\\[0.6mm]
+\textbf{Used for:} exposure and health-risk interpretation.
+\end{minipage}};
+\node[foot,below=3mm of c2.south] (f) {\textbf{For every target:} define the forecast horizon and quantify uncertainty where possible.\\[0.7mm]
+\textbf{Comparison guardrail:} performance should only be compared across studies when the forecast target, incident or dataset, horizon, metric and validation design are genuinely commensurable.};
+\end{tikzpicture}

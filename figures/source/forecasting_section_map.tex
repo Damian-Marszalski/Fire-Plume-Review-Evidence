@@ -1,0 +1,17 @@
+\begin{tikzpicture}[
+ node distance=2.7mm,
+ mini/.style={draw=black!35,fill=black!3,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ current/.style={draw=orange!75!black,fill=orange!13,very thick,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ arr/.style={-{Latex[length=1.6mm]},draw=black!55},
+ panel/.style={draw=orange!75!black,fill=orange!5,rounded corners=2pt,align=left,text width=0.91\linewidth,inner sep=5pt,text=black}
+]
+\node[mini] (a) {Risks and impacts};
+\node[mini,right=of a] (b) {Sensing\\and tracking};
+\node[current,right=of b] (c) {\textbf{Forecasting}};
+\node[mini,right=of c] (d) {Health-risk\\assessment};
+\node[mini,right=of d] (e) {Communication\\and action};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[panel,below=6mm of c] (p) {\textbf{Forecasting question:} Given current observations of the fire and plume, where will the fire spread, where will the plume travel, and what concentrations are expected?\\[1mm]
+\textbf{Included here:} fire-state forecasting; plume transport and dispersion; concentration forecasting; physical, statistical, machine-learning and hybrid methods; data preparation; metrics; uncertainty; simulation.\\[1mm]
+\textbf{Critical distinction:} fire spread, plume transport and pollutant concentration are different forecast targets and require task-appropriate validation.};
+\end{tikzpicture}

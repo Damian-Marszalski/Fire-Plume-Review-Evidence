@@ -1,0 +1,30 @@
+\begin{tikzpicture}[
+flow/.style={draw=black!35,rounded corners=2pt,minimum width=0.90\linewidth,minimum height=10.5mm,inner sep=0pt},
+tag/.style={draw=black!28,rounded corners=2pt,minimum width=0.21\linewidth,minimum height=8.2mm,align=center,font=\footnotesize\bfseries,text=black},
+q/.style={align=left,font=\scriptsize,text width=0.54\linewidth,anchor=west,text=black},
+arr/.style={-{Latex[length=1.8mm]},thick,draw=black!55},
+note/.style={draw=orange!70!black,fill=orange!5,rounded corners=2pt,align=center,text width=0.86\linewidth,inner sep=4pt,font=\scriptsize,text=black}
+]
+\matrix[column sep=0pt,row sep=4.0mm] (m) {
+\node[flow] (b1) {};\\
+\node[flow] (b2) {};\\
+\node[flow] (b3) {};\\
+\node[flow] (b4) {};\\
+\node[flow] (b5) {};\\
+\node[flow] (b6) {};\\
+};
+\foreach \a/\b in {b1/b2,b2/b3,b3/b4,b4/b5,b5/b6}{\draw[arr] (\a.south) -- (\b.north);} 
+\node[tag,fill=blue!10]   at ($(b1.west)+(2.10,0)$) {Concentration};
+\node[tag,fill=cyan!10]   at ($(b2.west)+(2.10,0)$) {Exposure};
+\node[tag,fill=green!10]  at ($(b3.west)+(2.10,0)$) {Vulnerability};
+\node[tag,fill=lime!10]   at ($(b4.west)+(2.10,0)$) {Health risk};
+\node[tag,fill=orange!10] at ($(b5.west)+(2.10,0)$) {Decision};
+\node[tag,fill=red!8]     at ($(b6.west)+(2.10,0)$) {Intervention};
+\node[q] at ($(b1.west)+(4.30,0)$) {What pollutants are present, at what concentrations, where, and when?};
+\node[q] at ($(b2.west)+(4.30,0)$) {Who is exposed, for how long, and at what level?};
+\node[q] at ($(b3.west)+(4.30,0)$) {Who is most susceptible and least able to respond?};
+\node[q] at ($(b4.west)+(4.30,0)$) {How serious is the resulting health risk?};
+\node[q] at ($(b5.west)+(4.30,0)$) {Which protective action is justified and feasible?};
+\node[q] at ($(b6.west)+(4.30,0)$) {Did the intervention reduce exposure or harm?};
+\node[note,below=5mm of b6.south] {At every transition: validate the mapping and retain relevant uncertainty.};
+\end{tikzpicture}

@@ -1,0 +1,8 @@
+﻿Source,Per_Query_Result_Total,Linkages_Entering_Cross_Source_Reconciliation,Within_Source_Overlap_Removed,Transformation,Evidence_Path
+ACM Digital Library,28728,28728,0,Per-query exported record linkages retained until cross-source reconciliation,methods/search_log.csv; data/title_abstract_screening.csv Source_Linkages
+IEEE Xplore,2594,2594,0,Per-query exported record linkages retained until cross-source reconciliation,methods/search_log.csv; data/title_abstract_screening.csv Source_Linkages
+Scopus,19763,19763,0,Per-query exported record linkages retained until cross-source reconciliation,methods/search_log.csv; data/title_abstract_screening.csv Source_Linkages
+PubMed,4186,2508,1678,Within-source duplicate query hits collapsed by PMID before cross-source reconciliation,"methods/search_log.csv; 2,508 PubMed Source_Linkages entries in title/abstract register"
+Semantic Scholar Academic Graph,17142,11149,5993,Within-source duplicate query hits collapsed by Semantic Scholar work ID before cross-source reconciliation,"methods/search_log.csv; 11,149 Semantic Scholar Source_Linkages entries in title/abstract register"
+Exploratory registry,180,180,0,Existing registry records entered once; paper-level exploratory query provenance was not preserved,data/title_abstract_screening.csv Identification_Sources and Source_Linkages
+TOTAL,72593,64922,7671,"72,413 structured-database query results plus 180 exploratory-registry records",Sum of rows above

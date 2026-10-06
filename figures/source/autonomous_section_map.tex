@@ -1,0 +1,18 @@
+\begin{tikzpicture}[
+ node distance=2.7mm,
+ mini/.style={draw=black!35,fill=black!3,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ current/.style={draw=blue!70!black,fill=blue!12,very thick,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ arr/.style={-{Latex[length=1.6mm]},draw=black!55},
+ panel/.style={draw=blue!65!black,fill=blue!4,rounded corners=2pt,align=left,text width=0.91\linewidth,inner sep=5pt,text=black}
+]
+\node[mini] (a) {Risks and impacts};
+\node[current,right=of a] (b) {\textbf{Sensing\\and tracking}};
+\node[current,right=of b] (c) {\textbf{Forecasting}};
+\node[mini,right=of c] (d) {Health-risk\\assessment};
+\node[mini,right=of d] (e) {Communication\\and action};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[panel,below=6mm of c] (p) {\textbf{Question answered by this section:} How can we determine where the fire and plume are now, and forecast where the smoke will travel and at what concentrations?\\[1mm]
+\textbf{Included here:} fixed, mobile, airborne and hybrid sensing platforms; fire and plume sensing, mapping and tracking; adaptive sensing, navigation and coordination; forecasting methods and their data inputs; uncertainty; simulation and validation.\\[1mm]
+\textbf{Evaluation basis:} the hazard-derived requirements from Section~\ref{sec:risks}.\\[1mm]
+\textbf{Output to the next section:} a time-stamped estimate or forecast of plume location and pollutant concentration, accompanied by uncertainty and known limitations.};
+\end{tikzpicture}

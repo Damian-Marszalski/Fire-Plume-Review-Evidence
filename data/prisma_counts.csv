@@ -1,0 +1,11 @@
+﻿Measure,Count,Reconciliation
+Formal source linkages,64922,"11,149 + 2,508 + 19,763 + 2,594 + 28,728 + 180"
+Duplicate/source-overlap linkages removed,37683,"64,922 - 37,683 = 27,239 unique records"
+Unique records screened,27239,"26,129 title/abstract exclusions + 397 contextual + 713 reports sought"
+Title/abstract exclusions,26129,Rule-assisted screen; excludes eight merged duplicate rows and sixteen manuscript-used contextual reclassifications
+Contextual outside primary corpus,397,195 fire-specific background/interface + 202 transferred adjacent-domain
+Reports sought,713,622 assessed + 91 not retrieved
+Reports assessed,622,562 included + 60 full-text exclusions
+Primary inclusions,562,Author-approved full-text eligibility
+Full-text exclusions,60,Author-approved full-text eligibility; non-retrieved reports excluded from this count
+Reports not retrieved,91,No complete report accessible after documented Zotero-assisted and manual attempts; no findings inferred

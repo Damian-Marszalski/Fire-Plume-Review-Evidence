@@ -1,0 +1,17 @@
+\begin{tikzpicture}[
+ node distance=2.7mm,
+ mini/.style={draw=black!35,fill=black!3,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ current/.style={draw=green!55!black,fill=green!12,very thick,rounded corners=1.5pt,align=center,text width=0.15\linewidth,minimum height=8mm,font=\scriptsize,text=black},
+ arr/.style={-{Latex[length=1.6mm]},draw=black!55},
+ panel/.style={draw=green!55!black,fill=green!4,rounded corners=2pt,align=left,text width=0.91\linewidth,inner sep=5pt,text=black}
+]
+\node[mini] (a) {Risks and impacts};
+\node[mini,right=of a] (b) {Sensing\\and tracking};
+\node[mini,right=of b] (c) {Forecasting};
+\node[current,right=of c] (d) {\textbf{Health-risk\\assessment}};
+\node[mini,right=of d] (e) {Communication\\and action};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);
+\node[panel,below=6mm of c] (p) {\textbf{Question answered by this section:} Once smoke concentrations have been observed or forecast, who is exposed, who is vulnerable, and how serious is the resulting health risk?\\[1mm]
+\textbf{Included here:} exposure estimation; susceptibility and vulnerable populations; health-risk estimation; thresholds and uncertainty; and evidence at the interface from risk interpretation to communication and intervention.\\[1mm]
+\textbf{Output to communication and action:} a timely, interpretable risk assessment identifying affected and vulnerable populations, risk severity and relevant uncertainty, suitable for informing protective decisions.};
+\end{tikzpicture}

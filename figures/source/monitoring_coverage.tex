@@ -1,0 +1,23 @@
+\centering
+\fontsize{7.0}{7.8}\selectfont
+\setlength{\tabcolsep}{1.2pt}
+\setlength{\extrarowheight}{0pt}
+\renewcommand{\arraystretch}{1.12}
+\rowcolors{2}{black!2}{white}
+\newcommand{\fambox}[1]{\parbox[c][13.5mm][c]{3.90cm}{\centering\setlength{\baselineskip}{7.3pt}#1}}
+\newcommand{\hdrbox}[1]{\parbox[c][9.5mm][c]{\linewidth}{\centering\bfseries\setlength{\baselineskip}{7.2pt}#1}}
+\makebox[\linewidth][c]{%
+\begin{tabular}{>{\centering\arraybackslash}m{4.20cm} *{5}{>{\centering\arraybackslash}m{2.15cm}}}
+\toprule
+\rowcolor{black!7}
+\hdrbox{Evidence\\family} & \hdrbox{Latency} & \hdrbox{Coverage} & \hdrbox{Specificity} & \hdrbox{Robustness} & \hdrbox{Uncertainty}\\
+\midrule
+\fambox{Fixed monitoring\\networks} & \covD & \covP & \covP & \covP & \covP\\
+\fambox{Satellite remote\\sensing} & \covP & \covD & \covP & \covP & \covP\\
+\fambox{Crewed mobile\\and community\\sensing} & \covP & \covD & \covP & \covP & \covP\\
+\fambox{Incident mobile\\and UAV\\sensing} & \covP & \covP & \covP & \covP & \covP\\
+\fambox{Operational smoke\\and dispersion\\models} & \covP & \covD & \covP & \covP & \covP\\
+\bottomrule
+\end{tabular}%
+}
+\par\vspace{2.8mm}\noindent\makebox[\linewidth][c]{\fontsize{7.0}{7.8}\selectfont \colorbox{green!28}{\strut\textbf{D}} directly addressed \quad \colorbox{yellow!38}{\strut\textbf{P}} partially addressed \quad \colorbox{black!10}{\strut\textbf{N}} not materially assessed.}

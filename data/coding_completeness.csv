@@ -1,0 +1,27 @@
+﻿Field,Total_Rows,Blank,Explicit_Unknown_or_Not_Reported,Not_Applicable,Usable_Value,Usable_or_NA,Usable_or_NA_Proportion,Interpretation
+Record_ID,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Title,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Authors,562,1,0,0,561,561,0.998220640569395,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Year,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Venue,562,20,0,0,542,542,0.9644128113879004,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+DOI,562,38,0,0,524,524,0.9323843416370107,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Fire_Type,562,0,142,0,420,420,0.7473309608540926,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Fire_Specificity,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Task_Taxonomy,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Platform,562,0,174,19,369,388,0.6903914590747331,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Sensor_or_Data,562,0,186,0,376,376,0.6690391459074733,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Method_or_Model,562,0,171,0,391,391,0.6957295373665481,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Evidence_Setting,562,0,154,0,408,408,0.7259786476868327,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Field_vs_Simulation,562,0,170,0,392,392,0.697508896797153,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Evaluation_Design,562,0,202,0,360,360,0.6405693950177936,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Metrics,562,0,227,6,329,335,0.5960854092526691,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Uncertainty_Treatment,562,0,223,0,339,339,0.603202846975089,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Deployment_Maturity_Register_Value,562,0,124,64,374,438,0.7793594306049823,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Claim_Boundary,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Evidence_Role_Parent,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Evidence_Role_Register,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Charting_Basis,562,0,2,0,560,560,0.99644128113879,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Eligibility_Author_Verification,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+AI_Minimum_Coding_Confidence,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+Detailed_Coding_Status,562,0,0,0,562,562,1.0,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
+DOI_URL,562,38,0,0,524,524,0.9323843416370107,Blank and explicit unknown values are disclosed rather than inferred; N/A is a valid coded state.
