@@ -33,7 +33,7 @@ note={Survey Certification}
 }
 ```
 
-The repository state corresponding to the published paper is preserved with the `v1.0-tmlr` version tag/release.
+The repository state corresponding to the published paper will be preserved with the `v1.0-tmlr` version tag/release.
 
 The repository supports the paper's PRISMA-ScR-reported scoping review and critical thematic synthesis of fire-plume observation, autonomous sensing and state estimation, forecasting, exposure and health-risk interpretation, and governed human action.
 
