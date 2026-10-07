@@ -6,6 +6,8 @@ This repository contains the auditable evidence package accompanying the TMLR pa
 
 **Authors:** Damian Marszalski, Shanfeng Hu, Simon D Griffiths, and Nauman Aslam  
 **Venue:** Transactions on Machine Learning Research (TMLR), 2026  
+**ISSN:** 2835-8856  
+**Certification:** Survey Certification  
 **OpenReview:** https://openreview.net/forum?id=70KyPTKcLA
 
 ## Citation
@@ -14,7 +16,24 @@ If you use this evidence package, please cite the associated TMLR paper:
 
 > Marszalski, D., Hu, S., Griffiths, S. D., and Aslam, N. (2026). *Real-Time Autonomous Systems for Tracking and Responding to Uncontrolled Fires: A Scoping Review of Sensing, Forecasting, Health-Risk Modelling, and Governance*. Transactions on Machine Learning Research. https://openreview.net/forum?id=70KyPTKcLA
 
-This citation will be updated if the final TMLR publication record provides additional bibliographic metadata. The repository state corresponding to the published paper will be preserved with a version tag/release.
+The published TMLR record carries **Survey Certification**.
+
+Official BibTeX from the published OpenReview record:
+
+```bibtex
+@article{
+marszalski2026realtime,
+title={Real-Time Autonomous Systems for Tracking and Responding to Uncontrolled Fires: A Scoping Review of Sensing, Forecasting, Health-Risk Modelling, and Governance},
+author={Damian Marszalski and Shanfeng Hu and Simon D Griffiths and Nauman Aslam},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=70KyPTKcLA},
+note={Survey Certification}
+}
+```
+
+The repository state corresponding to the published paper is preserved with the `v1.0-tmlr` version tag/release.
 
 The repository supports the paper's PRISMA-ScR-reported scoping review and critical thematic synthesis of fire-plume observation, autonomous sensing and state estimation, forecasting, exposure and health-risk interpretation, and governed human action.
 
